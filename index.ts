@@ -1,26 +1,23 @@
-#! /usr/bin/env node
-import inquirer from "inquirer";
 
-console.log("\n\tWellcome to farah041_CLI Number Guessing Game\n");
+import inquirer from "inquirer"; 
 
-const randomNumber = Math.floor(Math.random() * 5 + 1);
+const Currency = {
+    USD: 1,
+    EUR: 0.91,
+    GBP: 0.76,
+    INR: 74.57,
+    PKR: 280,
+};
 
-const answer = await inquirer.prompt([
+let user_answer = await inquirer.prompt({
+    name: 'from',
+    message: "Enter From Currency",
+    type: "list",
+    choices: ['USD', 'EUR', 'GBP', 'INR', 'PKR']
 
-    {
-     name: "userGuessedNumber",
-     type: "number",
-     message: "Enter your guess number(Number Limit from 1 to 5):",
+})
 
-    },
 
-]);
 
-if (answer.userGuessedNumber === randomNumber){
-    console.log("Congratulation ! You guess a correct number.");
 
-}
-else{
 
-    console.log("Sorry, you guesss a wrong number");
-}

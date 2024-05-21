@@ -1,17 +1,17 @@
 {
-  "name": "farah041_cli_number_guessing_game",
-  "version": "1.0.1",
+  "name": "currency-conventer",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
-  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.19"
+    "inquirer": "^9.2.20"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.7"
